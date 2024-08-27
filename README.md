@@ -21,16 +21,18 @@ This CLI tool is designed to simulate stress on a Reputation service by sending 
 
 1. **Clone the repository** (or extract the provided ZIP file):
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/ovadiaomer/sam_home_assignment
    cd reputation-stress-test
    
 ## Set up a virtual environment 
 
-   python3 -m venv venv
+   python3 -m venv reputation-stress-env
    
 
-## Activate the virtual environment:
-source venv/bin/activate
+## Activate the virtual environment (mac):
+   source reputation-stress-env/bin/activate
+## Activate the virtual environment (win):
+   .\reputation-stress-env\Scripts\activate
 
 ## Install the dependencies:
 pip install -r requirements.txt
@@ -47,3 +49,17 @@ python stress_test.py -n <number_of_domains> -c <concurrent_requests> -t <timeou
 ## Results:
 Results will be available under reputation-stress-env/stress_test_results.csv
 
+## Example results:
+Test is over!
+
+Total time: 5.14 seconds
+
+Requests in total: 500
+
+Error rate: 0.00% (0 / 500)
+
+Average time for one request: 0.3849 seconds
+
+Max time for one request: 0.8043 seconds
+
+P90 time for requests: 0.4659 seconds
